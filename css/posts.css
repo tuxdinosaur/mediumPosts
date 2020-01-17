@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "TiemposRegular";
+  src: url("../assets/fonts/TiemposHeadline-Regular.otf");
+}
+
+.tiemposRegularFont {
+  font-family: "TiemposRegular";
+}
+
+input,
+textarea,
+select {
+  border: 0;
+  /* border: 1px solid red; */
+  /* border-bottom: 1px solid #b3b3b1; */
+  outline: none;
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+  font-size: 3rem;
+  color: #363636;
+  font-family: "TiemposRegular";
+}
+
+/* FOCUS INPUT */
+
+input:focus,
+textarea:focus {
+  border-left: 1.5px solid #b3b3b1;
+  padding-left: 0.5rem;
+}
+
+input.fontSize {
+  font-size: 1.5rem;
+}
+
+input.data {
+  color: #b3b3b1;
+}
+
+textarea {
+  font-size: 1.5rem;
+}
+
+select {
+  font-size: 1.5rem;
+  color: #b3b3b1;
+}
+
+select option {
+  font-size: 1.25rem;
+  font-family: "TiemposRegular";
+}
+
+select option#select {
+  font-size: 1.25rem;
+  font-family: "TiemposRegular";
+  color: #b3b3b1;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b3b3b1;
+  opacity: 1; /* Firefox */
+  font-family: "TiemposRegular";
+}
+
+.objetfit > img {
+  width: 150px;
+  height: 150px;
+  object-fit: none;
+  background-color: black;
+}
+
+/* label {
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #a8a8a8;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 1rem;
+  cursor: text;
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+} */
+
+/* input,
+label {
+  width: 100%;
+  height: 5rem;
+  font-size: rem;
+} */
+
+/* 
+input.title:valid + label.title,
+input.title:focus + label.title {
+  color: #26a69a;
+  font-size: 0.8rem;
+  top: -30px;
+  pointer-events: none;
+} */

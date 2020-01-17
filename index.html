@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Medium</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+  <title>Medium – Get smarter about what matters to you.</title>
+  <!--SLICK-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+  <!-- BOOSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
@@ -21,14 +27,14 @@
       <a href="#"><img class="" src="assets/images/logo-mobile.png" alt="Search"></a>
     </div>
     <div class="d-flex align-items-center">
+      <div class="d-none d-md-block mr-3">
+        <a class="btn btn-outline-secondary " href="./createPost.html">New story</a>
+      </div>
       <div class="mr-3">
         <a href="#"><img class="mr-3 " src="assets/images/search.png" alt="notified"></a>
       </div>
       <div class="">
         <a href="#"><img class="mr-3" src="assets/images/notification.png" alt="Search"></a>
-      </div>
-      <div class="d-none d-md-block mr-3">
-        <a class="btn btn-outline-secondary " href="./createPost.html">New post</a>
       </div>
       <div class="">
         <a href="#"><img class="mr-3" src="assets/images/profile.png" alt="sign-in"></a>
@@ -36,7 +42,7 @@
     </div>
   </header>
 
-  <nav class="mr-md-5 ml-md-5">
+  <!-- <nav class="mr-md-5 ml-md-5">
     <ul class="d-flex align-items-center mt-4 mb-4 text-muted">
       <li class="col "><img src="assets/images/back.png" alt="left"></li>
       <li class="col mr-3 mr-md-0">HOME</li>
@@ -52,9 +58,59 @@
       <li class="col d-none d-md-block">MODUS</li>
       <li class="col"><img src="assets/images/right.png" alt="right"></li>
     </ul>
-  </nav>
+  </nav> -->
 
-  <div class="container">
+  <!--NAVLINKS-->
+
+  <div class="container-fluid sticky-top bg-white">
+    <div class="container-navlinks">
+      <div class="slider variable-width">
+
+        <div class="item">
+          <p class="link-item-active">HOME</p>
+        </div>
+        <div class="item">
+          <p class="link-item">ONEZERO</p>
+        </div>
+        <div class="item">
+          <p class="link-item">ELEMENTAL</p>
+        </div>
+        <div class="item">
+          <p class="link-item">GEN</p>
+        </div>
+        <div class="item">
+          <p class="link-item">ZORA</p>
+        </div>
+        <div class="item">
+          <p class="link-item">FORGE</p>
+        </div>
+        <div class="item">
+          <p class="link-item">HUMAN PARTS</p>
+        </div>
+        <div class="item">
+          <p class="link-item">MARKER</p>
+        </div>
+        <div class="item">
+          <p class="link-item">SELF</p>
+        </div>
+        <div class="item">
+          <p class="link-item">TECH</p>
+        </div>
+        <div class="item">
+          <p class="link-item">HEATED</p>
+        </div>
+        <div class="item">
+          <p class="link-item">MODUS</p>
+        </div>
+        <div class="item">
+          <p class="link-item">MORE</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
     <div class="row my-3">
       <div class="d-flex ml-auto mb-10 d-none d-md-block">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -62,7 +118,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <section class="container-fluid">
     <div class="row">
@@ -176,6 +232,7 @@
         </div>
       </div>
     </div>
+
     <div class="row d-flex ">
       <div class="order-2 order-md-1 col-12 col-md-7 content-scroll post-container">
         <!--
@@ -200,9 +257,11 @@
           </div>
           <img class="ml-3 imagenes" src="assets/images/8.jpeg" alt="Sec2">
         </div>
-
         -->
       </div>
+
+      <!-- POPULAR ON MEDIUM -->
+
       <div class="order-1 order-md-2 col-12 col-md-4 offset-md-1">
         <h5>Popular on Medium</h5>
         <hr>
@@ -267,14 +326,17 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
+
       <div class="modal-dialog" role="document">
         <div class="modal-content">
+
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Crea una nueva entrada</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
           <div class="modal-body">
             <form>
               <div class="form-group">
@@ -284,6 +346,10 @@
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Autor:</label>
                 <input type="text" class="form-control" id="user-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Categoria:</label>
+                <input type="text" class="form-control" id="user-category">
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Fecha:</label>
@@ -299,12 +365,14 @@
               </div>
             </form>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary save">Save changes</button>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -313,9 +381,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="js/main.js">
-
-  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
